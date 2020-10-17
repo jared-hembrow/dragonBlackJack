@@ -1,7 +1,7 @@
 //imports
 const Discord = require("discord.js");
 const Canvas = require("canvas");
-const { token, prefix } = require("./config.json");
+const { prefix } = require("./config.json");
 
 // assign disord class to const
 const client = new Discord.Client();
@@ -568,4 +568,4 @@ const playerWins = async () => {
   );
   return attachment;
 };
-client.login(token);
+client.login(process.env.BOT_TOKEN);
