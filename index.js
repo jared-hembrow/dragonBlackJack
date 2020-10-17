@@ -2,7 +2,7 @@
 const Discord = require("discord.js");
 const Canvas = require("canvas");
 const { prefix } = require("./config.json");
-
+require('dotenv').config()
 // assign disord class to const
 const client = new Discord.Client();
 // const for game
