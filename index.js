@@ -225,7 +225,7 @@ client.on("message", async (receivedMessage) => {
     let playersCanvas = await playerWins();
     dealerDisplay = await channel.send(dealersCanvas);
     playerDisplay = await channel.send(playersCanvas);
-    await channel.send("End of Game!! Enter *start game to begin new game");
+    await channel.send("End of Game!! Enter *play game to begin new game. \n Enter *help for commands");
   }
   // player bust
   if (playerAceCount === true && playerScore > 21 && inGame === true) {
@@ -235,7 +235,7 @@ client.on("message", async (receivedMessage) => {
     let playersCanvas = await playerBust();
     await channel.send(dealersCanvas);
     await channel.send(playersCanvas);
-    await channel.send("End of Game!! Enter *start game to begin new game");
+    await channel.send("End of Game!! Enter *play game to begin new game. \n Enter *help for commands");
   }
   // dealer has higher score then player and wins
   if (dealersScore > playerScore && dealersScore < 22 && inGame === true) {
@@ -246,7 +246,7 @@ client.on("message", async (receivedMessage) => {
     let playersCanvas = await playerLost();
     await channel.send(dealersCanvas);
     await channel.send(playersCanvas);
-    await channel.send("End of Game!! Enter *start game to begin new game");
+    await channel.send("End of Game!! Enter *play game to begin new game. \n Enter *help for commands");
   }
 });
 // generate a random number to select a card in the remaining deck
