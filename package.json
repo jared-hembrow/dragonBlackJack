@@ -1,7 +1,7 @@
 {
   "name": "blackjack",
   "version": "1.0.0",
-  "description": "",
+  "description": "Play black jack on discord",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
