@@ -11,6 +11,9 @@ Enjoy playing black jack in your discord server
 # How to set up
 ### Step 1
 Clone repo
+```bash
+git clone https://github.com/jared-hembrow/dragonBlackJack.git
+```
 ### Step 2
 Set up the bot with discord
 1. Follow instuctions at the offical discord docs [here](https://discordpy.readthedocs.io/en/stable/discord.html)
