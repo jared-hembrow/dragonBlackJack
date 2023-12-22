@@ -41,7 +41,7 @@ const client = new discord_js_1.Client({
         discord_js_1.IntentsBitField.Flags.MessageContent,
     ],
 });
-const prefix = "*";
+const prefix = process.env.PREFIX || "*";
 // Set games according to user/author
 const games = {};
 // Load in all images

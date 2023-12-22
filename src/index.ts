@@ -13,7 +13,7 @@ const client = new Client({
     IntentsBitField.Flags.MessageContent,
   ],
 });
-const prefix = "*";
+const prefix = process.env.PREFIX ||  "*";
 // Set games according to user/author
 const games: {
   [playerId: string]: Game;
