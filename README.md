@@ -32,7 +32,7 @@ Run the bot
 npm run start
 ```
 
-Now you should be able to run the commands at the top of this page to play blackjack in you discord server
+Now you should be able to run the commands at the top of this page to play blackjack in a discord server
 
 
 ## What i learnt from this project
