@@ -4,13 +4,22 @@
   "description": "Play black jack on discord",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./app/index.js",
+    "tsdev": "tsc-watch --project . --outDir ./app --onSuccess \"nodemon ./app/index.js\""
   },
   "author": "Jared Adam Hembrow",
   "license": "ISC",
   "dependencies": {
-    "canvas": "^2.6.1",
-    "discord.js": "^12.3.1",
+    "canvas": "^2.11.2",
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.3.1",
     "fs": "0.0.1-security"
+  },
+  "devDependencies": {
+    "@tsconfig/node16": "^16.1.1",
+    "@types/node": "^20.10.5",
+    "tsc-watch": "^6.0.4",
+    "typescript": "^5.3.3"
   }
 }
